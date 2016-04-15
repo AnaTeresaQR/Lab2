@@ -87,7 +87,13 @@ public class EventsBuilder implements AbstractEventsBuilder {
         Client client = events.getClient();
         if (attendees >= 0) {
             if (client instanceof EducationalInstitution) {
-
+                int underageAttendees = ((EducationalInstitution) client).getUnderageAmount();
+                if (underageAttendees < attendees) {
+                    events.setAttendeesAmount(attendees);
+                } else {
+                    throw new EventsException("Se requiere que la cantidad de asistentes sea válida,"
+                            + " y la cantidad de menores de edad menor al total de asistentes");
+                }
             } else {
                 events.setAttendeesAmount(attendees);
             }

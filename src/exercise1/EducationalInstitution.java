@@ -8,10 +8,6 @@ public class EducationalInstitution extends Client {
 
     private int underageAmount;
 
-    public EducationalInstitution() {
-        super(null, null, null, null);
-    }
-
     public EducationalInstitution(String InstitutionName, String contactTel, String TelDescription, Person personApplying) {
         super(InstitutionName, contactTel, TelDescription, personApplying);
     }

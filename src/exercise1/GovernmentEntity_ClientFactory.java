@@ -7,7 +7,8 @@ package exercise1;
 public class GovernmentEntity_ClientFactory implements ClientFactory {
 
     @Override
-    public Client createClient() {
-        return new GovernmentEntity();
+    public Client createClient(String InstitutionName, String contactTel, String TelDescription, Person personApplying) {
+        return new GovernmentEntity(InstitutionName, contactTel, TelDescription, personApplying);
     }
+
 }
