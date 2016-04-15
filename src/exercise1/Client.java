@@ -47,24 +47,7 @@ public class Client {
     }
 
     public void setPersonApplying(Person personApplying) throws EventsException {
-        if (createPerson(personApplying)) {
-            this.personApplying = personApplying;
-        } else {
-            throw new EventsException("No es posible que la persona sea creada");
-        }
-    }
-
-    private boolean createPerson(Person person) {
-        String schedule = person.getSchedule();
-        String name = person.getName();
-        String secondName = person.getSecondName();
-        String lastName = person.getLastName();
-        String secondLastName = person.getSecondLastName();
-        return (schedule != null && !schedule.equals(""))
-                && (name != null && !name.equals(""))
-                && (secondName != null && !secondName.equals(""))
-                && (lastName != null && !lastName.equals(""))
-                && (secondLastName != null && !secondLastName.equals(""));
+        this.personApplying = personApplying;
     }
 
     @Override
