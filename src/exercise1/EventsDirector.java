@@ -6,10 +6,10 @@ import java.util.Date;
  *
  * @author Ana Teresa
  */
-public class Director {
+public class EventsDirector {
 
-    public Events createEvents(AbstractEventsBuilder ab,
-            Client client,
+    public GeneralEvents createEvents(AbstractEventsBuilder ab,
+            GeneralClient client,
             String placeEvent,
             Date date,
             int hoursAmount,

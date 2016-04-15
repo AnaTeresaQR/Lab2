@@ -6,6 +6,6 @@ package exercise1;
  */
 public interface ClientFactory {
 
-    public Client createClient(String InstitutionName, String contactTel, String TelDescription, Person personApplying);
+    public GeneralClient createClient(String InstitutionName, String contactTel, String TelDescription, Person personApplying);
 
 }
