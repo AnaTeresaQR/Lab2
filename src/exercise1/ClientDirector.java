@@ -21,7 +21,7 @@ public class ClientDirector {
             throw new ClientException("No se puede crear la instancia de cliente correctamente");
         }
         builder.createSpecificGroupClient(builder.getgClient());
-        builder.createInstitutionName(contactTel);
+        builder.createInstitutionName(InstitutionName);
         builder.createTelDescription(TelDescription);
         builder.createContactTel(contactTel);
         builder.createPersonApplying(personApplying);

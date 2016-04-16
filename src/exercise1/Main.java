@@ -1,5 +1,6 @@
 package exercise1;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -18,7 +19,8 @@ public class Main {
             AbstractEventsBuilder aeb = new EventsBuilder();
             EventsDirector eventsDirector = new EventsDirector();
             try {
-                GeneralEvents ge = eventsDirector.createEvents(aeb, gc, "San Ramón", new Date(29, 6, 2016), 4, 20);
+
+                GeneralEvents ge = eventsDirector.createEvents(aeb, gc, "San Ramón", createDate(2016, 6, 29), 4, 20);
                 System.out.println("" + ge.toString());
             } catch (EventsException ex) {
                 System.out.println("" + ex.getMessage());
@@ -27,5 +29,11 @@ public class Main {
         } catch (ClientException ex) {
             System.out.println("" + ex.getMessage());
         }
+    }
+
+    public static Date createDate(int year, int month, int date) {
+        Calendar c = Calendar.getInstance();
+        c.set(year, month - 1, date);
+        return c.getTime();
     }
 }
