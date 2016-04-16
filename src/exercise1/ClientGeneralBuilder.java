@@ -9,7 +9,7 @@ public class ClientGeneralBuilder implements AbstractGeneralClientBuilder {
     GeneralClient client;
 
     public ClientGeneralBuilder() {
-        client = new GeneralClient();
+        client = new GrupalClient();
     }
 
     @Override

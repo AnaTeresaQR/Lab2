@@ -12,6 +12,6 @@ public interface AbstractClientBuilder extends AbstractGeneralClientBuilder {
 
     public GrupalClient getgClient();
 
-    public abstract GrupalClient createSpecificGroupClient(GrupalClient specific);
+    public abstract GrupalClient createSpecificGroupClient();
 
 }

@@ -36,7 +36,7 @@ public class GrupalClient extends GeneralClient {
 
     @Override
     public String toString() {
-        return super.toString() + " InstitutionName: " + InstitutionName + ", TelDescription: " + TelDescription + '}';
+        return super.toString() + "\n" + "InstitutionName: " + InstitutionName + ", TelDescription: " + TelDescription + '}';
     }
 
 }

@@ -9,7 +9,7 @@ public class SpecificEventsBuilder extends EventsBuilder {
     SpecificEvents events;
 
     public SpecificEventsBuilder() {
-        events = new SpecificEvents();
+        events = (SpecificEvents) super.events;
     }
 
     @Override
@@ -17,7 +17,7 @@ public class SpecificEventsBuilder extends EventsBuilder {
         GeneralClient client = events.getClient();
         if (attendees >= 0) {
             if (client instanceof EducationalInstitution) {
-                if (events.getUnderageAmount() < attendees) {
+                if (events.getUnderageAmount() <= attendees) {
                     events.setAttendeesAmount(attendees);
                 } else {
                     throw new EventsException("Se requiere que la cantidad de asistentes sea válida,"

@@ -9,7 +9,7 @@ public abstract class ClientGroupBuilder extends ClientGeneralBuilder implements
     GrupalClient gClient;
 
     public ClientGroupBuilder() {
-        gClient = new GrupalClient();
+        gClient = (GrupalClient) super.client;
     }
 
     @Override
@@ -24,7 +24,7 @@ public abstract class ClientGroupBuilder extends ClientGeneralBuilder implements
     @Override
     public void createTelDescription(String telDescription) throws ClientException {
         if (telDescription != null && !telDescription.equals("")) {
-            gClient.setTelDescription("");
+            gClient.setTelDescription(telDescription);
         } else {
             throw new ClientException("La descrpción del teléfono es requerido");
         }

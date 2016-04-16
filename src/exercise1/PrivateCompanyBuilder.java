@@ -7,7 +7,7 @@ package exercise1;
 public class PrivateCompanyBuilder extends ClientGroupBuilder {
 
     @Override
-    public GrupalClient createSpecificGroupClient(GrupalClient specific) {
+    public GrupalClient createSpecificGroupClient() {
         return new PrivateCompany();
     }
 

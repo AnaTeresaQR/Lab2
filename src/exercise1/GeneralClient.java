@@ -35,7 +35,7 @@ public class GeneralClient {
 
     @Override
     public String toString() {
-        return "Client{" + "contactTel: " + contactTel + ", personApplying: " + personApplying;
+        return "Client{" + "contactTel: " + contactTel + "\nPersonApplying: " + personApplying;
     }
 
 }
