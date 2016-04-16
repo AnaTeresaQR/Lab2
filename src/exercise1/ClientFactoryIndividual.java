@@ -6,6 +6,9 @@ package exercise1;
  */
 public interface ClientFactoryIndividual {
 
-    public GeneralClient createClient(String contactTel, Person personApplying);
+    AbstractGeneralClientBuilder abstGeneralC = new ClientGeneralBuilder();
+    ClientDirector clientDirector = new ClientDirector();
+
+    public GeneralClient createClient(String contactTel, Person personApplying) throws ClientException;
 
 }

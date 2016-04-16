@@ -6,9 +6,10 @@ package exercise1;
  */
 public class PrivateCompany_ClientFactory implements ClientFactory {
 
-    @Override
-    public GeneralClient createClient(String InstitutionName, String contactTel, String TelDescription, Person personApplying) {
-        return new PrivateCompany(InstitutionName, contactTel, TelDescription, personApplying);
-    }
+    AbstractClientBuilder absGroupClient = new PrivateCompanyBuilder();
 
+    @Override
+    public GeneralClient createClient(String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException {
+        return clientDirector.createGrupalClient(absGroupClient, InstitutionName, TelDescription, contactTel, personApplying);
+    }
 }

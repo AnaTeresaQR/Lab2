@@ -6,9 +6,11 @@ package exercise1;
  */
 public class GovernmentEntity_ClientFactory implements ClientFactory {
 
+    AbstractClientBuilder absGroupClient = new GovernmentEntityBuilder();
+
     @Override
-    public GeneralClient createClient(String InstitutionName, String contactTel, String TelDescription, Person personApplying) {
-        return new GovernmentEntity(InstitutionName, contactTel, TelDescription, personApplying);
+    public GeneralClient createClient(String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException {
+        return clientDirector.createGrupalClient(absGroupClient, InstitutionName, TelDescription, contactTel, personApplying);
     }
 
 }

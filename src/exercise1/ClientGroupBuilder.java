@@ -4,7 +4,7 @@ package exercise1;
  *
  * @author Ana Teresa
  */
-public class ClientGroupBuilder extends ClientGeneralBuilder implements AbstractClientBuilder {
+public abstract class ClientGroupBuilder extends ClientGeneralBuilder implements AbstractClientBuilder {
 
     GrupalClient gClient;
 

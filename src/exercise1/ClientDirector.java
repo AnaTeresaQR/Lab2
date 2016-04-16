@@ -18,13 +18,14 @@ public class ClientDirector {
 
     public GrupalClient createGrupalClient(AbstractClientBuilder builder, String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException {
         if (builder == null) {
-            builder = new ClientGroupBuilder();
+            throw new ClientException("No se puede crear la instancia de cliente correctamente");
         }
+        builder.createSpecificGroupClient(builder.getgClient());
         builder.createInstitutionName(contactTel);
         builder.createTelDescription(TelDescription);
         builder.createContactTel(contactTel);
         builder.createPersonApplying(personApplying);
-        return null;
+        return builder.getgClient();
 
     }
 

@@ -6,6 +6,8 @@ package exercise1;
  */
 public interface ClientFactory {
 
-    public GeneralClient createClient(String InstitutionName, String contactTel, String TelDescription, Person personApplying);
+    ClientDirector clientDirector = new ClientDirector();
+
+    public GeneralClient createClient(String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException;
 
 }
