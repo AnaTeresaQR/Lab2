@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             AbstractEventsBuilder aeb = new EventsBuilder();
-            AbstractEventsBuilder aeb2 = new SpecificEventsBuilder();
+            AbstractSpecificEventsBuilder aeb2 = new SpecificEventsBuilder();
 
             EventsDirector eventsDirector = new EventsDirector();
 

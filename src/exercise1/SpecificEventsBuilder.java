@@ -4,7 +4,7 @@ package exercise1;
  *
  * @author Ana Teresa
  */
-public class SpecificEventsBuilder extends EventsBuilder {
+public class SpecificEventsBuilder extends EventsBuilder implements AbstractSpecificEventsBuilder {
 
     SpecificEvents events;
 
@@ -12,6 +12,7 @@ public class SpecificEventsBuilder extends EventsBuilder {
         events = (SpecificEvents) super.events;
     }
 
+    @Override
     public void createUnderAgeAmount(int underAgeAmount) throws EventsException {
         if (events.getAttendeesAmount() >= underAgeAmount) {
             events.setUnderageAmount(underAgeAmount);
