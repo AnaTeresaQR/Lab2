@@ -67,7 +67,7 @@ public class GeneralEvents {
 
     @Override
     public String toString() {
-        return "\nEvents{" + client + "\nplaceEvent: " + placeEvent + ", date: " + date.toLocaleString() + ", hoursAmount: " + hoursAmount + ", attendeesAmount: " + attendeesAmount + '}';
+        return "\nEvents{" + client + "\nplaceEvent: " + placeEvent + ", date: " + date.toLocaleString() + ", hoursAmount: " + hoursAmount + ", attendeesAmount: " + attendeesAmount;
     }
 
 }

@@ -30,7 +30,7 @@ public class SpecificEventsBuilder extends EventsBuilder {
     }
 
     @Override
-    public GeneralEvents getEvents() {
+    public SpecificEvents getEvents() {
         return events;
     }
 

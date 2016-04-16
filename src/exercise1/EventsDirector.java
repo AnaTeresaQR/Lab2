@@ -27,4 +27,24 @@ public class EventsDirector {
 
         return ab.getEvents();
     }
+
+    public SpecificEvents createEvents(AbstractEventsBuilder ab,
+            GeneralClient client,
+            String placeEvent,
+            Date date,
+            int hoursAmount,
+            int attendeesAmount, int underAgeAmount)
+            throws EventsException {
+
+        if (ab == null) {
+            ab = new SpecificEventsBuilder();
+        }
+        ab.createClient(client);
+        ab.createPlaceEventName(placeEvent);
+        ab.createDate(date);
+        ab.createHoursAmount(hoursAmount);
+        ab.createAttendeesAmount(attendeesAmount);
+
+        return (SpecificEvents) ab.getEvents();
+    }
 }
