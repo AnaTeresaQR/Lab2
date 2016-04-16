@@ -12,20 +12,12 @@ public class SpecificEventsBuilder extends EventsBuilder {
         events = (SpecificEvents) super.events;
     }
 
-    @Override
-    public void createAttendeesAmount(int attendees) throws EventsException {
-        GeneralClient client = events.getClient();
-        if (attendees >= 0) {
-            if (client instanceof EducationalInstitution) {
-                if (events.getUnderageAmount() <= attendees) {
-                    events.setAttendeesAmount(attendees);
-                } else {
-                    throw new EventsException("Se requiere que la cantidad de asistentes sea válida,"
-                            + " y la cantidad de menores de edad menor al total de asistentes");
-                }
-            }
+    public void createUnderAgeAmount(int underAgeAmount) throws EventsException {
+        if (events.getAttendeesAmount() >= underAgeAmount) {
+            events.setUnderageAmount(underAgeAmount);
         } else {
-            throw new EventsException("Se requiere que la cantidad de asistentes sea válida");
+            throw new EventsException("Se requiere que la cantidad de asistentes sea válida,"
+                    + " y la cantidad de menores de edad menor al total de asistentes");
         }
     }
 

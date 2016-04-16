@@ -44,7 +44,8 @@ public class EventsDirector {
         ab.createDate(date);
         ab.createHoursAmount(hoursAmount);
         ab.createAttendeesAmount(attendeesAmount);
-
+       ((SpecificEventsBuilder) ab).createUnderAgeAmount(underAgeAmount);
+        
         return (SpecificEvents) ab.getEvents();
     }
 }
