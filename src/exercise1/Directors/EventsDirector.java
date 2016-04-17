@@ -3,9 +3,9 @@ package exercise1.Directors;
 import exercise1.AbstractEventsBuilder;
 import exercise1.AbstractSpecificEventsBuilder;
 import exercise1.ConcreteClients.GeneralClient;
-import exercise1.EventsBuilder;
 import exercise1.Exceptions.EventsException;
 import exercise1.GeneralEvents;
+import exercise1.GeneralEventsBuilder;
 import exercise1.SpecificEvents;
 import exercise1.SpecificEventsBuilder;
 import java.util.Date;
@@ -25,7 +25,7 @@ public class EventsDirector {
             throws EventsException {
 
         if (ab == null) {
-            ab = new EventsBuilder();
+            ab = new GeneralEventsBuilder();
         }
         ab.createClient(client);
         ab.createPlaceEventName(placeEvent);
