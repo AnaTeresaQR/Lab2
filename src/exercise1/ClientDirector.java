@@ -1,5 +1,10 @@
 package exercise1;
 
+import exercise1.AbstractClientBuilders.AbstractGeneralClientBuilder;
+import exercise1.AbstractClientBuilders.AbstractClientBuilder;
+import exercise1.ConcreteClients.GeneralClient;
+import exercise1.ConcreteClients.GrupalClient;
+
 /**
  *
  * @author Ana Teresa

@@ -23,7 +23,7 @@ public class SpecificEventsBuilder extends EventsBuilder implements AbstractSpec
     }
 
     @Override
-    public SpecificEvents getEvents() {
+    public SpecificEvents getSpecificEvents() {
         return events;
     }
 
