@@ -36,8 +36,7 @@ public class GroupClient extends GeneralClient {
         this.TelDescription = TelDescription;
     }
 
-    @Override
-    public String toString() {
+    public String show() {
         return super.toString() + "\n" + "InstitutionName: " + InstitutionName + ", TelDescription: " + TelDescription + '}';
     }
 

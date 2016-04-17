@@ -1,7 +1,7 @@
 package exercise1.ConcreteClients;
 
 import exercise1.ConcreteObjects.Person;
-import exercise1.*;
+
 
 /**
  *
@@ -14,6 +14,11 @@ public class GovernmentEntity extends GroupClient {
 
     public GovernmentEntity(String InstitutionName, String TelDescription, String contactTel, Person personApplying) {
         super(InstitutionName, TelDescription, contactTel, personApplying);
+    }
+    
+    @Override
+    public String toString() {
+        return super.show();
     }
 
 }

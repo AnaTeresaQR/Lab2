@@ -27,9 +27,9 @@ public class SpecificEvents extends GeneralEvents {
         return underageAmount;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + " , underAgeAmount: " + underageAmount;
+    public String show() {
+        String father = super.toString();
+        return father + " , underAgeAmount: " + underageAmount;
     }
 
 }
