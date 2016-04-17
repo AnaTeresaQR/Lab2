@@ -1,5 +1,10 @@
 package exercise1;
 
+import exercise1.ClientFactoryCreators.GovernmentEntity_ClientGroupFactory;
+import exercise1.ClientFactoryCreators.GeneralClient_ClientGeneralFactory;
+import exercise1.ClientFactoryCreators.EducationalInstitution_ClientGroupFactory;
+import exercise1.AbstractClientFactoryCreators.ClientGeneralFactory;
+import exercise1.AbstractClientFactoryCreators.ClientGroupFactory;
 import exercise1.ConcreteClients.GeneralClient;
 import java.util.Calendar;
 import java.util.Date;
@@ -24,17 +29,21 @@ public class Main {
 
             ClientGroupFactory cf = new GovernmentEntity_ClientGroupFactory();
             ClientGroupFactory cf2 = new EducationalInstitution_ClientGroupFactory();
+            ClientGeneralFactory cfi1 = new GeneralClient_ClientGeneralFactory();
 
             GeneralClient gc = cf.createClient("Entidad Gubernamental", "tel de oficina", "24536789", person);
             GeneralClient gc2 = cf2.createClient("Institución Educativa", "tel del director de la institución", "24475689", person2);
+            GeneralClient gc3 = cfi1.createClient("89767552", person3);
 
             try {
 
                 GeneralEvents ge = eventsDirector.createEvents(aeb, gc, "San Ramón", createDate(2016, 6, 29), 4, 20);
                 SpecificEvents ge2 = (SpecificEvents) eventsDirector.createEvents(aeb2, gc2, "Palmares", createDate(2016, 8, 15), 5, 30, 15);
+                GeneralEvents ge3 = eventsDirector.createEvents(aeb, gc3, "Alajuela", createDate(2016, 4, 23), 5, 120);
 
                 System.out.println("" + ge.toString());
                 System.out.println("" + ge2.toString());
+                System.out.println("" + ge3.toString());
             } catch (EventsException ex) {
                 System.out.println("" + ex.getMessage());
             }
