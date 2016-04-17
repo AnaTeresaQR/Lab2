@@ -13,7 +13,7 @@ public class GeneralEventsBuilder implements AbstractEventsBuilder {
     GeneralEvents events;
 
     public GeneralEventsBuilder() {
-        events = new GeneralEvents();
+        events = new SpecificEvents();
     }
 
     @Override

@@ -6,7 +6,7 @@ import exercise1.Exceptions.EventsException;
  *
  * @author Ana Teresa
  */
-public class SpecificEventsBuilder extends EventsBuilder implements AbstractSpecificEventsBuilder {
+public class SpecificEventsBuilder extends GeneralEventsBuilder implements AbstractSpecificEventsBuilder {
 
     SpecificEvents events;
 
