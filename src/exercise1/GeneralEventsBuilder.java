@@ -7,12 +7,12 @@ import java.util.Date;
  *
  * @author Ana Teresa
  */
-public class EventsBuilder implements AbstractEventsBuilder {
+public class GeneralEventsBuilder implements AbstractEventsBuilder {
 
     GeneralEvents events;
 
-    public EventsBuilder() {
-        events = new SpecificEvents();
+    public GeneralEventsBuilder() {
+        events = new GeneralEvents();
     }
 
     @Override

@@ -1,23 +1,24 @@
 package exercise1;
 
+import exercise1.ConcreteClients.GeneralClient;
 import java.util.Date;
 
 /**
  *
  * @author Ana Teresa
  */
-public class Events {
+public class GeneralEvents {
 
-    private Client client;
+    private GeneralClient client;
     private String placeEvent;
     private Date date;
     private int hoursAmount;
     private int attendeesAmount;
 
-    public Events() {
+    public GeneralEvents() {
     }
 
-    public Events(Client client, String placeEvent, Date date, int hoursAmount, int attendeesAmount) {
+    public GeneralEvents(GeneralClient client, String placeEvent, Date date, int hoursAmount, int attendeesAmount) {
         this.client = client;
         this.placeEvent = placeEvent;
         this.date = date;
@@ -25,11 +26,11 @@ public class Events {
         this.attendeesAmount = attendeesAmount;
     }
 
-    public Client getClient() {
+    public GeneralClient getClient() {
         return client;
     }
 
-    public void setClient(Client client) {
+    public void setClient(GeneralClient client) {
         this.client = client;
     }
 
@@ -67,7 +68,7 @@ public class Events {
 
     @Override
     public String toString() {
-        return "Events{" + "client: " + client + "\nplaceEvent=" + placeEvent + ", date=" + date.toLocaleString() + ", hoursAmount=" + hoursAmount + ", attendeesAmount=" + attendeesAmount + '}';
+        return "\nEvents{" + client + "\nplaceEvent: " + placeEvent + ", date: " + date.toLocaleString() + ", hoursAmount: " + hoursAmount + ", attendeesAmount: " + attendeesAmount;
     }
 
 }

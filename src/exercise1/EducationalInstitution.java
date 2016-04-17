@@ -1,23 +1,18 @@
 package exercise1;
 
+import exercise1.ConcreteClients.GroupClient;
+
 /**
  *
  * @author Ana Teresa
  */
-public class EducationalInstitution extends Client {
+public class EducationalInstitution extends GroupClient {
 
-    private int underageAmount;
-
-    public EducationalInstitution(String InstitutionName, String contactTel, String TelDescription, Person personApplying) {
-        super(InstitutionName, contactTel, TelDescription, personApplying);
+    public EducationalInstitution() {
     }
 
-    public void setUnderageAmount(int underageAmount) {
-        this.underageAmount = underageAmount;
-    }
-
-    public int getUnderageAmount() {
-        return underageAmount;
+    public EducationalInstitution(String InstitutionName, String TelDescription, String contactTel, Person personApplying) {
+        super(InstitutionName, TelDescription, contactTel, personApplying);
     }
 
 }

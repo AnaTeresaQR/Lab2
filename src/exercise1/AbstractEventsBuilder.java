@@ -1,5 +1,6 @@
 package exercise1;
 
+import exercise1.ConcreteClients.GeneralClient;
 import java.util.Date;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Date;
  */
 public interface AbstractEventsBuilder {
 
-    public void createClient(Client client) throws EventsException;
+    public void createClient(GeneralClient client) throws EventsException;
 
     public void createPlaceEventName(String newPlaceName) throws EventsException;
 
@@ -18,6 +19,6 @@ public interface AbstractEventsBuilder {
 
     public void createAttendeesAmount(int attendees) throws EventsException;
 
-    public Events getEvents();
+    public GeneralEvents getEvents();
 
 }
