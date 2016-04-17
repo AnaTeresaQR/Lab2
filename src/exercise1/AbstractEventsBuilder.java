@@ -1,5 +1,6 @@
 package exercise1;
 
+import exercise1.Exceptions.EventsException;
 import exercise1.ConcreteClients.GeneralClient;
 import java.util.Date;
 

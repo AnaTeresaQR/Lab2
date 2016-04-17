@@ -1,9 +1,12 @@
-package exercise1;
+package exercise1.Directors;
 
 import exercise1.AbstractClientBuilders.AbstractGeneralClientBuilder;
 import exercise1.AbstractClientBuilders.AbstractClientBuilder;
+import exercise1.AbstractClientBuilders.ClientGeneralBuilder;
+import exercise1.Exceptions.ClientException;
 import exercise1.ConcreteClients.GeneralClient;
 import exercise1.ConcreteClients.GroupClient;
+import exercise1.ConcreteObjects.Person;
 
 /**
  *

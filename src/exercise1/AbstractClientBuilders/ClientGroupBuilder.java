@@ -1,6 +1,6 @@
 package exercise1.AbstractClientBuilders;
 
-import exercise1.ClientException;
+import exercise1.Exceptions.ClientException;
 import exercise1.ConcreteClients.GroupClient;
 
 /**
