@@ -2,10 +2,10 @@ package exercise1.ClientFactoryCreators;
 
 import exercise1.AbstractClientFactoryCreators.ClientGroupFactory;
 import exercise1.AbstractClientBuilders.AbstractClientBuilder;
-import exercise1.ClientException;
+import exercise1.Exceptions.ClientException;
+import exercise1.ConcreteClientBuilders.PrivateCompanyBuilder;
 import exercise1.ConcreteClients.GroupClient;
-import exercise1.Person;
-import exercise1.PrivateCompanyBuilder;
+import exercise1.ConcreteObjects.Person;
 
 /**
  *

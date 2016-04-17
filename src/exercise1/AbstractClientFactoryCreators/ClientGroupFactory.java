@@ -1,9 +1,9 @@
 package exercise1.AbstractClientFactoryCreators;
 
-import exercise1.ClientDirector;
-import exercise1.ClientException;
+import exercise1.Directors.ClientDirector;
+import exercise1.Exceptions.ClientException;
 import exercise1.ConcreteClients.GroupClient;
-import exercise1.Person;
+import exercise1.ConcreteObjects.Person;
 
 /**
  *

@@ -1,5 +1,7 @@
 package exercise1;
 
+import exercise1.Exceptions.EventsException;
+
 /**
  *
  * @author Ana Teresa

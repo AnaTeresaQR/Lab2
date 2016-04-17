@@ -1,6 +1,6 @@
 package exercise1.ConcreteClients;
 
-import exercise1.Person;
+import exercise1.ConcreteObjects.Person;
 
 /**
  *

@@ -1,5 +1,9 @@
 package exercise1;
 
+import exercise1.ConcreteObjects.Person;
+import exercise1.Exceptions.EventsException;
+import exercise1.Exceptions.ClientException;
+import exercise1.Directors.EventsDirector;
 import exercise1.ClientFactoryCreators.GovernmentEntity_ClientGroupFactory;
 import exercise1.ClientFactoryCreators.GeneralClient_ClientGeneralFactory;
 import exercise1.ClientFactoryCreators.EducationalInstitution_ClientGroupFactory;
