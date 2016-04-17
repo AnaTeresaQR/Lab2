@@ -36,7 +36,7 @@ public class EventsDirector {
         return ab.getEvents();
     }
 
-    public SpecificEvents createEvents(AbstractSpecificEventsBuilder ab,
+    public SpecificEvents createSpecificEvents(AbstractSpecificEventsBuilder ab,
             GeneralClient client,
             String placeEvent,
             Date date,
@@ -54,6 +54,6 @@ public class EventsDirector {
         ab.createAttendeesAmount(attendeesAmount);
         ab.createUnderAgeAmount(underAgeAmount);
 
-        return (SpecificEvents) ab.getEvents();
+        return ab.getSpecificEvents();
     }
 }

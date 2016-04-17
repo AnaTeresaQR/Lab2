@@ -48,7 +48,7 @@ public class Main {
             try {
 
                 GeneralEvents ge = eventsDirector.createEvents(aeb, gc, "San Ramón", createDate(2016, 6, 29), 4, 20);
-                SpecificEvents ge2 = (SpecificEvents) eventsDirector.createEvents(aeb2, gc2, "Palmares", createDate(2016, 8, 15), 5, 30, 15);
+                SpecificEvents ge2 = eventsDirector.createSpecificEvents(aeb2, gc2, "Palmares", createDate(2016, 8, 15), 5, 30, 15);
                 GeneralEvents ge3 = eventsDirector.createEvents(aeb, gc3, "Alajuela", createDate(2016, 4, 23), 5, 120);
 
                 System.out.println("" + ge.toString());
