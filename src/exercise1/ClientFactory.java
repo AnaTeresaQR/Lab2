@@ -1,6 +1,6 @@
 package exercise1;
 
-import exercise1.ConcreteClients.GeneralClient;
+import exercise1.ConcreteClients.GrupalClient;
 
 /**
  *
@@ -10,6 +10,6 @@ public interface ClientFactory {
 
     ClientDirector clientDirector = new ClientDirector();
 
-    public GeneralClient createClient(String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException;
+    public GrupalClient createClient(String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException;
 
 }
