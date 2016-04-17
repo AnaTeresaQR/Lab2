@@ -2,8 +2,6 @@ package exercise1;
 
 import exercise1.ProductEventsBuilders.SpecificEvents;
 import exercise1.ProductEventsBuilders.GeneralEvents;
-import exercise1.ConcreteEventsBuilders.SpecificEventsBuilder;
-import exercise1.ConcreteEventsBuilders.GeneralEventsBuilder;
 import exercise1.AbstractEventsBuilders.AbstractEventsBuilder;
 import exercise1.AbstractEventsBuilders.AbstractSpecificEventsBuilder;
 import exercise1.ConcreteObjects.Person;
@@ -52,7 +50,7 @@ public class Main {
                 GeneralEvents ge3 = eventsDirector.createEvents(aeb, gc3, "Alajuela", createDate(2016, 4, 23), 5, 120);
 
                 System.out.println("" + ge.toString());
-                System.out.println("" + ge2.toString());
+                System.out.println("" + ge2.show());
                 System.out.println("" + ge3.toString());
             } catch (EventsException ex) {
                 System.out.println("" + ex.getMessage());
