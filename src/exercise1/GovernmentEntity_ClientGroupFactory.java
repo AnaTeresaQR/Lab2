@@ -7,7 +7,7 @@ import exercise1.ConcreteClients.GroupClient;
  *
  * @author Ana Teresa
  */
-public class GovernmentEntity_ClientFactory implements ClientGroupFactory {
+public class GovernmentEntity_ClientGroupFactory implements ClientGroupFactory {
 
     AbstractClientBuilder absGroupClient = new GovernmentEntityBuilder();
 

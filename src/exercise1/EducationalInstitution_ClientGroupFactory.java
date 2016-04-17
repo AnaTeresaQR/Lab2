@@ -7,12 +7,13 @@ import exercise1.ConcreteClients.GroupClient;
  *
  * @author Ana Teresa
  */
-public class PrivateCompany_ClientFactory implements ClientGroupFactory {
+public class EducationalInstitution_ClientGroupFactory implements ClientGroupFactory {
 
-    AbstractClientBuilder absGroupClient = new PrivateCompanyBuilder();
+    AbstractClientBuilder absGroupClient = new EducationalInstitutionBuilder();
 
     @Override
     public GroupClient createClient(String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException {
         return clientDirector.createGrupalClient(absGroupClient, InstitutionName, TelDescription, contactTel, personApplying);
     }
+
 }
