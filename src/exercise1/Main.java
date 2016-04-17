@@ -22,8 +22,8 @@ public class Main {
             Person person3 = new Person("202410876", "Chester", "Antonio", "Quesada", "Ramírez");
             Person person4 = new Person("203450560", "Tomás", "Osvaldo", "Quesada", "Murillo");
 
-            ClientFactory cf = new GovernmentEntity_ClientFactory();
-            ClientFactory cf2 = new EducationalInstitution_ClientFactory();
+            ClientGroupFactory cf = new GovernmentEntity_ClientFactory();
+            ClientGroupFactory cf2 = new EducationalInstitution_ClientFactory();
 
             GeneralClient gc = cf.createClient("Entidad Gubernamental", "tel de oficina", "24536789", person);
             GeneralClient gc2 = cf2.createClient("Institución Educativa", "tel del director de la institución", "24475689", person2);

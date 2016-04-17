@@ -1,5 +1,6 @@
-package exercise1;
+package exercise1.ConcreteClientBuilders;
 
+import exercise1.*;
 import exercise1.AbstractClientBuilders.ClientGroupBuilder;
 import exercise1.ConcreteClients.GroupClient;
 
@@ -7,11 +8,10 @@ import exercise1.ConcreteClients.GroupClient;
  *
  * @author Ana Teresa
  */
-public class GovernmentEntityBuilder extends ClientGroupBuilder {
+public class EducationalInstitutionBuilder extends ClientGroupBuilder {
 
     @Override
     public GroupClient createSpecificGroupClient() {
-        return new GovernmentEntity();
+        return new EducationalInstitution();
     }
-
 }

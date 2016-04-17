@@ -1,7 +1,7 @@
 package exercise1;
 
 import exercise1.AbstractClientBuilders.ClientGroupBuilder;
-import exercise1.ConcreteClients.GrupalClient;
+import exercise1.ConcreteClients.GroupClient;
 
 /**
  *
@@ -10,7 +10,7 @@ import exercise1.ConcreteClients.GrupalClient;
 public class PrivateCompanyBuilder extends ClientGroupBuilder {
 
     @Override
-    public GrupalClient createSpecificGroupClient() {
+    public GroupClient createSpecificGroupClient() {
         return new PrivateCompany();
     }
 

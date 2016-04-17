@@ -1,6 +1,6 @@
-package exercise1;
+package exercise1.ConcreteClients;
 
-import exercise1.ConcreteClients.GroupClient;
+import exercise1.*;
 
 /**
  *
