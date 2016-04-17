@@ -27,8 +27,8 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            AbstractEventsBuilder aeb = new GeneralEventsBuilder();
-            AbstractSpecificEventsBuilder aeb2 = new SpecificEventsBuilder();
+            AbstractEventsBuilder aeb = null; // = new GeneralEventsBuilder();
+            AbstractSpecificEventsBuilder aeb2 = null; // = new SpecificEventsBuilder();
 
             EventsDirector eventsDirector = new EventsDirector();
 
