@@ -13,7 +13,7 @@ public class EducationalInstitution_ClientGroupFactory implements ClientGroupFac
 
     @Override
     public GroupClient createClient(String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException {
-        return clientDirector.createGrupalClient(absGroupClient, InstitutionName, TelDescription, contactTel, personApplying);
+        return clientDirector.createGroupClient(absGroupClient, InstitutionName, TelDescription, contactTel, personApplying);
     }
 
 }

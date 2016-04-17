@@ -21,7 +21,7 @@ public class ClientDirector {
         return builder.getClient();
     }
 
-    public GroupClient createGrupalClient(AbstractClientBuilder builder, String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException {
+    public GroupClient createGroupClient(AbstractClientBuilder builder, String InstitutionName, String TelDescription, String contactTel, Person personApplying) throws ClientException {
         if (builder == null) {
             throw new ClientException("No se puede crear la instancia de cliente correctamente");
         }

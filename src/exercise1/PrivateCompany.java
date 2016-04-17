@@ -11,8 +11,8 @@ public class PrivateCompany extends GroupClient {
     public PrivateCompany() {
     }
 
-    public PrivateCompany(String InstitutionName, String contactTel, String TelDescription, Person personApplying) {
-        super(InstitutionName, contactTel, TelDescription, personApplying);
+    public PrivateCompany(String InstitutionName, String TelDescription, String contactTel, Person personApplying) {
+        super(InstitutionName, TelDescription, contactTel, personApplying);
     }
 
 }

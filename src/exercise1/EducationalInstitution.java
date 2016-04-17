@@ -11,8 +11,8 @@ public class EducationalInstitution extends GroupClient {
     public EducationalInstitution() {
     }
 
-    public EducationalInstitution(String InstitutionName, String contactTel, String TelDescription, Person personApplying) {
-        super(InstitutionName, contactTel, TelDescription, personApplying);
+    public EducationalInstitution(String InstitutionName, String TelDescription, String contactTel, Person personApplying) {
+        super(InstitutionName, TelDescription, contactTel, personApplying);
     }
 
 }
