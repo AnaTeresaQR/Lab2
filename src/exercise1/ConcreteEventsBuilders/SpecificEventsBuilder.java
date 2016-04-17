@@ -1,6 +1,8 @@
-package exercise1;
+package exercise1.ConcreteEventsBuilders;
 
+import exercise1.AbstractEventsBuilders.AbstractSpecificEventsBuilder;
 import exercise1.Exceptions.EventsException;
+import exercise1.ProductEventsBuilders.SpecificEvents;
 
 /**
  *

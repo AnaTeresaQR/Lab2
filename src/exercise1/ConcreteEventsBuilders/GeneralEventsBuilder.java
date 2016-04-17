@@ -1,7 +1,10 @@
-package exercise1;
+package exercise1.ConcreteEventsBuilders;
 
+import exercise1.AbstractEventsBuilders.AbstractEventsBuilder;
 import exercise1.Exceptions.EventsException;
 import exercise1.ConcreteClients.GeneralClient;
+import exercise1.ProductEventsBuilders.GeneralEvents;
+import exercise1.ProductEventsBuilders.SpecificEvents;
 import java.util.Date;
 
 /**

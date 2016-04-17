@@ -1,4 +1,4 @@
-package exercise1;
+package exercise1.ProductEventsBuilders;
 
 import exercise1.ConcreteClients.GeneralClient;
 import java.util.Date;

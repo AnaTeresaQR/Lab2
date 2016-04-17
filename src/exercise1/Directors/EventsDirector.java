@@ -1,13 +1,13 @@
 package exercise1.Directors;
 
-import exercise1.AbstractEventsBuilder;
-import exercise1.AbstractSpecificEventsBuilder;
+import exercise1.AbstractEventsBuilders.AbstractEventsBuilder;
+import exercise1.AbstractEventsBuilders.AbstractSpecificEventsBuilder;
 import exercise1.ConcreteClients.GeneralClient;
 import exercise1.Exceptions.EventsException;
-import exercise1.GeneralEvents;
-import exercise1.GeneralEventsBuilder;
-import exercise1.SpecificEvents;
-import exercise1.SpecificEventsBuilder;
+import exercise1.ProductEventsBuilders.GeneralEvents;
+import exercise1.ConcreteEventsBuilders.GeneralEventsBuilder;
+import exercise1.ProductEventsBuilders.SpecificEvents;
+import exercise1.ConcreteEventsBuilders.SpecificEventsBuilder;
 import java.util.Date;
 
 /**
@@ -36,7 +36,7 @@ public class EventsDirector {
         return ab.getEvents();
     }
 
-    public SpecificEvents createEvents(AbstractSpecificEventsBuilder ab,
+    public SpecificEvents createSpecificEvents(AbstractSpecificEventsBuilder ab,
             GeneralClient client,
             String placeEvent,
             Date date,
@@ -54,6 +54,6 @@ public class EventsDirector {
         ab.createAttendeesAmount(attendeesAmount);
         ab.createUnderAgeAmount(underAgeAmount);
 
-        return (SpecificEvents) ab.getEvents();
+        return ab.getSpecificEvents();
     }
 }
