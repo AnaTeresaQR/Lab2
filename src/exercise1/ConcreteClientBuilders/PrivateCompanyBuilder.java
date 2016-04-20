@@ -9,10 +9,10 @@ import exercise1.ConcreteClients.PrivateCompany;
  * @author Ana Teresa
  */
 public class PrivateCompanyBuilder extends ClientGroupBuilder {
-
+    
     @Override
-    public GroupClient createSpecificGroupClient() {
-        return new PrivateCompany();
+    public void createSpecificGroupClient() {
+        setClient(new PrivateCompany());
     }
-
+    
 }

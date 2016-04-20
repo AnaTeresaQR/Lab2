@@ -6,7 +6,7 @@ import exercise1.ConcreteObjects.Person;
  *
  * @author Ana Teresa
  */
-public class GroupClient extends GeneralClient {
+public abstract class GroupClient extends GeneralClient {
 
     private String InstitutionName;
     private String TelDescription;

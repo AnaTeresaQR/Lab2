@@ -20,6 +20,8 @@ public interface AbstractEventsBuilder {
     public void createHoursAmount(int hours) throws EventsException;
 
     public void createAttendeesAmount(int attendees) throws EventsException;
+    
+     public void createPrice() ;
 
     public GeneralEvents getEvents();
 

@@ -6,7 +6,7 @@ import exercise1.ConcreteObjects.Person;
  *
  * @author Ana Teresa
  */
-public class GeneralClient {
+public abstract class GeneralClient {
 
     private String contactTel;
     private Person personApplying;

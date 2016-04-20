@@ -3,6 +3,7 @@ package exercise1.Directors;
 import exercise1.AbstractClientBuilders.AbstractGeneralClientBuilder;
 import exercise1.AbstractClientBuilders.AbstractClientBuilder;
 import exercise1.AbstractClientBuilders.ClientGeneralBuilder;
+import exercise1.AbstractClientBuilders.ClientGroupBuilder;
 import exercise1.Exceptions.ClientException;
 import exercise1.ConcreteClients.GeneralClient;
 import exercise1.ConcreteClients.GroupClient;
@@ -16,8 +17,9 @@ public class ClientDirector {
 
     public GeneralClient createIndividualClient(AbstractGeneralClientBuilder builder, String contactTel, Person personApplying) throws ClientException {
         if (builder == null) {
-            builder = new ClientGeneralBuilder();
+            throw new ClientException("No se puede crear la instancia de cliente correctamente");
         }
+        builder.createSpecificGroupClient();
         builder.createContactTel(contactTel);
         builder.createPersonApplying(personApplying);
 
@@ -33,7 +35,7 @@ public class ClientDirector {
         builder.createTelDescription(TelDescription);
         builder.createContactTel(contactTel);
         builder.createPersonApplying(personApplying);
-        return builder.getgClient();
+        return (GroupClient) builder.getClient();
 
     }
 

@@ -15,4 +15,6 @@ public interface AbstractGeneralClientBuilder {
     public void createPersonApplying(Person personApplying) throws ClientException;
 
     public GeneralClient getClient();
+
+    public abstract void createSpecificGroupClient();
 }
